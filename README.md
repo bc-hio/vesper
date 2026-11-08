@@ -6,10 +6,13 @@
 
 ## 安装（推荐）
 
-安装包：
+从 [Releases](https://github.com/bc-hio/vesper/releases/latest) 下载 `NOCTURNE-Setup-1.0.0.exe`。
 
-```text
-dist\NOCTURNE-Setup-1.0.0.exe
+> 安装包 115.82 MiB，超过 GitHub 单文件 100 MiB 的上限，因此不纳入仓库，只作为 Release 附件提供。
+> 下载后建议核对 SHA-256（校验值见仓库根目录的 `NOCTURNE-Setup-1.0.0.sha256`）：
+
+```powershell
+Get-FileHash .\NOCTURNE-Setup-1.0.0.exe -Algorithm SHA256
 ```
 
 安装流程：

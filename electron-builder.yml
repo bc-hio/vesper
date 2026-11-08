@@ -1,0 +1,43 @@
+appId: com.nocturne.desktop
+productName: NOCTURNE
+copyright: Copyright © 2026 NOCTURNE
+asar: false
+directories:
+  output: dist
+  buildResources: build
+files:
+  - package.json
+  - desktop/**/*
+  - assets/**/*
+  - widget.html
+  - widget.css
+  - widget.js
+  - config.js
+  - server.mjs
+  - "!**/*.log"
+  - "!**/*.map"
+extraMetadata:
+  main: desktop/main.cjs
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: assets/nocturne.ico
+  executableName: NOCTURNE
+  artifactName: NOCTURNE-Setup-${version}.${ext}
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: false
+  createStartMenuShortcut: true
+  shortcutName: NOCTURNE
+  installerIcon: assets/nocturne.ico
+  uninstallerIcon: assets/nocturne.ico
+  installerHeaderIcon: assets/nocturne.ico
+  artifactName: NOCTURNE-Setup-${version}.${ext}
+  include: build/installer.nsh
+  runAfterFinish: true
+  deleteAppDataOnUninstall: false

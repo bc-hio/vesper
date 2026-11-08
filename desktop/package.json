@@ -1,0 +1,7 @@
+{
+  "name": "nocturne-widget",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frameless NOCTURNE desktop widget",
+  "main": "main.cjs"
+}
